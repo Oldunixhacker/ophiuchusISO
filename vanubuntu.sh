@@ -32,16 +32,16 @@ echo "Installing GNOME desktop environment..."
 schroot -c vanubuntu -- apt-get install -y gnome-core gnome-boxes gnome-connections gnome-core
 
 echo "Editing lsb-release file..."
-echo """PRETTY_NAME=\"Vanubuntu $VANUBUNTU_VERSION\"
-NAME=\"Vanubuntu GNU/Linux\"
+echo """PRETTY_NAME=\"Ophiuchus $VANUBUNTU_VERSION\"
+NAME=\"Ophiuchus\"
 VERSION_ID=\"$VANUBUNTU_VERSION\"
 VERSION=\"$VANUBUNTU_VERSION ($VANUBUNTU_CODENAME)\"
 VERSION_CODENAME=$VANUBUNTU_CODENAME
-ID=vanubuntu
-ID_LIKE=ubuntu
+ID=ophiuchus
+ID_LIKE=vanubuntu
 HOME_URL=\"https://vanubuntu.github.io\"
-SUPPORT_URL=\"https://github.com/vanubuntu/VanubISO/wiki\"
-BUG_REPORT_URL=\"https://github.com/vanubuntu/VanubISO/issues/new/choose\"""" > $HOME/.vanubuntu-daily-build-chroot/etc/os-release
+SUPPORT_URL=\"https://github.com/ophiuchusLinux/ophiuchusISO/wiki\"
+BUG_REPORT_URL=\"https://github.com/ophiuchusLinux/ophiuchusISO/issues/new/choose\"""" > $HOME/.vanubuntu-daily-build-chroot/etc/os-release
 
 if [ $1 == "" ]; then
 echo "I'm a teapot :/"
