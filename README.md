@@ -4,7 +4,8 @@ This repository contains the `ophiuchusISO` command line tool to build Ophiuchus
 Ubuntu temporary chroot. It also contains some patches to original Ubuntu code
 that makes Ophiuchus work properly, preventing any bug rendering.
 
-This source code is a copy of the original Vanubuntu source code.
+This script is a copy of the original Vanubuntu source code, licensed under the GNU General
+Public License, either version 3 of the License, or (at your option) any other version.
 
 ## Building
 
